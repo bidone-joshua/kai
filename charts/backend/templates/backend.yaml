@@ -14,6 +14,6 @@ spec:
     spec:
       containers:
       - name: backend
-        image: jrlmgitopsacr.azurecr.io/backend:1b43b7eb95aa29074b40a71ada994c7308f3f326
+        image: jrlmgitopsacr.azurecr.io/backend:c53181c84dfd714a1bbc8f4e96894f5704b77f61
         ports:
-        - containerPort: 80
+        - containerPort: 3000
