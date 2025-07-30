@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: backend
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: backend
+  template:
+    metadata:
+      labels:
+        app: backend
+    spec:
+      containers:
+      - name: backend
+        image: jrlmgitopsacr.azurecr.io/backend:1b43b7eb95aa29074b40a71ada994c7308f3f326
+        ports:
+        - containerPort: 80
